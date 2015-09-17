@@ -11,16 +11,18 @@
     <file url="file://$PROJECT_DIR$/app/sources/js/module.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/js/my-app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/js/task.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/sources/nodejs/class.exceptions.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/sources/nodejs/class.expressWebserver.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/sources/nodejs/class.filesystem.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/sources/nodejs/class.logger.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/sources/nodejs/class.system.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/sources/nodejs/class.webserver.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/api/class.products.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/config.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/nodejs/index.express.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/nodejs/index.filesystem.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/nodejs/index.webserver.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/nodejs/kreis.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/system/class.exceptions.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/system/class.expressWebserver.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/system/class.filesystem.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/system/class.logger.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/system/class.system.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/system/class.webserver.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/nodejs/tmp/text.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/nodejs/views/index.ejs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/seite2.html" charset="UTF-8" />

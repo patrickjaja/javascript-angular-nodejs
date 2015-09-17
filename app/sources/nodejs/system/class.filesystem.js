@@ -1,8 +1,8 @@
 'use strict';
 var fs = require('fs');
-var System = require('./class.system');
+var System = require('./class.system.js');
 var Logger = require('./class.logger.js');
-var Exceptions = require('./class.exceptions');
+var Exceptions = require('./class.exceptions.js');
 
 class Filesystems extends System {
   constructor(filename) {
