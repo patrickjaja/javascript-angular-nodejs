@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chat mit Socket.io</title>
+    <script src="http://127.0.0.1:3000/socket.io/socket.io.js"></script>
+    <script src="http://127.0.0.1/chat.js"></script>
+    <style>
+        #messages { min-height : 8em; border : 1px solid black; }
+        #input { width : 85%; border : 1px solid black; }
+        button { width : 10%; }
+    </style>
+</head>
+<body>
+<div id="chat">
+    <!-- Ausgabe der Nachrichten -->
+    <ul id="messages"></ul>
+    <!-- Eingabe der Texte -->
+    <form id="form">
+        <input type="text" id="input">
+        <button>Send</button>
+    </form>
+</div>
+</body>
+</html>
