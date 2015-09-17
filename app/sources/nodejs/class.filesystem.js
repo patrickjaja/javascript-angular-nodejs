@@ -15,7 +15,6 @@ class Webserver {
     });
   }
   handleRequest(request, response) {
-    response.writeHead(200, )
     response.end(`It Works!! Path Hit: ${request.url} `);
   }
 };
