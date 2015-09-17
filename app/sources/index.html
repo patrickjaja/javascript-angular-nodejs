@@ -1,13 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
+<html ng-app="myApp" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="##TITLE##">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-
+      Angular Basics
     </title>
 
     <!-- Add to homescreen -->
@@ -39,9 +38,11 @@
     <!-- endbuild -->
 
     <!-- Page styles -->
+  <link rel="stylesheet" href="../../bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
 </head>
-</head>
-
+<body class="ng-cloak">
 <section id="news" class="page">
   <title>News</title>
   <div class="page-header">
@@ -53,49 +54,65 @@
   </div>
 
   <div class="page-content">
-    <div class="content-nav">
+    <div class="content-nav" ng-controller="NavCtrl as navCtrl" layout="column">
+      <md-autocomplete
+        ng-disabled="navCtrl.isDisabled"
+        md-no-cache="navCtrl.noCache"
+        md-selected-item="navCtrl.selectedItem"
+        md-search-text-change="navCtrl.searchTextChange(ctrl.searchText)"
+        md-search-text="navCtrl.searchText"
+        md-selected-item-change="navCtrl.selectedItemChange(item)"
+        md-items="item in navCtrl.querySearch(navCtrl.searchText)"
+        md-item-text="item.display"
+        md-min-length="0"
+        ng-model="search"
+        placeholder="Search for products...">
+        <md-item-template>
+          <span md-highlight-text="navCtrl.searchText" md-highlight-flags="^i">{{item.display}}</span>
+        </md-item-template>
+        <md-not-found>
+          No matches found for "{{navCtrl.searchText}}".
+        </md-not-found>
+      </md-autocomplete>
+
+
       <nav>
         <ul class="nav">
           <li>
-            <a href="index.html">Seite 1</a>
+            <a href="#/">Home</a>
           </li>
           <li>
-            <a href="seite2.html">Seite 2</a>
+            <a href="#/about">About 1</a>
           </li>
           <li>
-            <a href="seite3.html">Seite 3</a>
+            <a href="#/about2">About 2</a>
+          </li>
+          <li>
+            <a href="#/destroy">Seite 3</a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="content-main">
-      <main id="page-main">
-        <article itemscope="">
-          <h2>Veranstaltungen</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus
-            aperiam harum alias officiis assumenda officia quibusdam deleniti
-            eos cupiditate dolore doloribus!</p>
-          <figure>
-            <img src="http://placehold.it/320x240" alt=""/>
-            <img src="http://placehold.it/320x240" alt=""/>
-            <figcaption>
-              <h3>Überschrift zur Bildbeschreibung</h3>
-              <ol>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-                <li>Qui dicta minus molestiae vel beatae natus</li>
-              </ol>
-            </figcaption>
-          </figure>
-          content goes here ...
-        </article>
+      <main id="page-main" ng-view>
+        <div>LEEER</div>
       </main>
     </div>
-  </div>
-  <div class="content-aside">
-    <aside>
-      Inhalte die nicht unbedingt wahrgenommen werden müssen.
-    </aside>
+    <div class="content-aside">
+      <aside ng-controller="CartController1">
+        <p ng-hide="cart.getItems().length">Your Cart is empty.</p>
+        <table ng-show="cart.getItems().length">
+          <tr ng-repeat="item in cart.getItems() track by $index" class="cart-item">
+            <td>{{item.description}}</td>
+            <td>{{item.price | currency}}</td>
+          </tr>
+          <tr>
+            <td>{{cart.getItems().length}} articles</td>
+            <td>{{cart.sum() | currency}} Summe</td>
+          </tr>
+        </table>
+      </aside>
+    </div>
   </div>
   <div class="page-footer">
     <footer>
@@ -122,7 +139,14 @@
 <!-- build:js(app/) scripts/login-app.min.js -->
 <!--<script src="js/basics.js"></script>-->
 <!--<script src="js/constructors.js"></script>-->
-<script src="js/module.js"></script>
+<!--<script src="js/module.js"></script>-->
+<!--<script src="js/main-for-worker.js"></script>-->
+<script src="../../bower_components/angular/angular.js"></script>
+<script src="../../bower_components/angular-route/angular-route.js"></script>
+<script src="../../bower_components/angular-animate/angular-animate.js"></script>
+<script src="../../bower_components/angular-aria/angular-aria.js"></script>
+<script src="../../bower_components/angular-material/angular-material.js"></script>
+<script src="js/my-app.js"></script>
 <!-- endbuild -->
 </body>
 </html>

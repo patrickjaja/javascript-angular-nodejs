@@ -1,0 +1,13 @@
+
+/** ANGULAR **/
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.cart-item.ng-enter {
+  transition: all 1s ease-in-out;
+  background-color: green;
+}
+.cart-item.ng-enter-active  {
+  background-color: white;
+}

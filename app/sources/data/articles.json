@@ -1,0 +1,65 @@
+[
+	{
+		"id"          : 1, 
+		"description" : "Gopser Armycap",
+		"vendor"      : "by Stetson", 
+		"price"       : "29.00",
+		"image"       : "sources/images/1.jpg"
+	},
+	{
+		"id"          : 2, 
+		"description" : "McCook Leather Cap", 
+		"vendor"      : "by Stetson", 
+		"price"       : "79.00",
+		"image"       : "sources/images/2.jpg"
+	},
+	{
+		"id"          : 3, 
+		"description" : "Eduardo Panama Trilby",  
+		"vendor"      : "by Lierys", 
+		"price"       : "79.95",
+		"image"       : "sources/images/3.jpg"
+	},
+	{
+		"id"          : 4,
+		"description" : "Darwin Leather Traveller",
+		"vendor"      : "byJacaru",
+		"price"       : "69.00",
+		"image"       : "sources/images/4.jpg"
+	},
+	{
+		"id"          : 5,
+		"description" : "Classic Wool Trilby",
+		"vendor"      : "by Jacaru",
+		"price"       : "29.95",
+		"image"       : "sources/images/5.jpg"
+	},
+	{
+		"id"          : 6,
+		"description" : "Pomfret Pork Pie Trilby",
+		"vendor"      : "by Stetson",
+		"price"       : "79.00",
+		"image"       : "sources/images/6.jpg"
+	},
+	{
+		"id"          : 7,
+		"description" : "Gore-Tex Raincap",
+		"vendor"      : "by Seeberger",
+		"price"       : "79.95",
+		"image"       : "sources/images/7.jpg"
+	},
+	{
+		"id"          : 8,
+		"description" : "Clark Trilby",
+		"vendor"      : "by Stetson",
+		"price"       : "129.00",
+		"image"       : "sources/images/8.jpg"
+	},
+	{
+		"id"          : 9, 
+		"description" : "Catalogue",
+		"vendor"      : "", 
+		"price"       : "0",
+		"image"       : "sources/images/9.jpg"
+	}
+]

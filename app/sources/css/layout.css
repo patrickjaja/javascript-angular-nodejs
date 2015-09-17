@@ -1,0 +1,75 @@
+
+/*.page-header {*/
+  /*display: block;*/
+  /*width: 100%;*/
+/*}*/
+@media screen {
+
+  .page-content {
+    flex: 1 auto;
+    display: flex;
+    /*flex-flow: row wrap;*/
+    justify-content: space-around;
+  }
+  .content-nav {
+    flex-direction: row;
+    height: 300px;
+    width: 300px;
+    /*order: 1;*/
+    /*flex: 1;*/
+    flex: 1 auto;
+
+    font-size: 12px;
+    transition: height 2s;
+    transition: font-size 0.1s;
+  }
+  .content-aside {
+    /*order:3;*/
+    width: 200px;
+    height: 150px;
+    /*flex: 1;*/
+    flex: 1 auto;
+
+    font-size: 12px;
+    transition: height 2s;
+    transition: font-size 0.1s;
+    /*overflow: hidden;*/
+  }
+  /*.page-footer {*/
+  /*display: flex;*/
+  /*}*/
+  .content-main {
+    flex-wrap: wrap;
+    /*order: 2;*/
+    /*flex: 1;*/
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .page-content {
+    flex-flow: row wrap;
+    flex-direction: row;
+  }
+  /*.content-nav {*/
+    /*display:none;*/
+  /*}*/
+  /*.content-aside {*/
+    /*display:none;*/
+  /*}*/
+}
+
+@media screen and  (max-width: 768px) {
+  .page-content {
+    flex-direction: row;
+  }
+  .content-nav {
+    height: 0px;
+    font-size: 0px;
+  }
+  .content-aside {
+    height: 0px;
+    font-size: 0px;
+  }
+}
+

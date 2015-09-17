@@ -1,6 +1,6 @@
 // MODULE SCHREIBEN
 
-var qits = window.qits || {};
+var qits = qits || {};
 
 qits.http = (function() {
   'use strict';
@@ -47,7 +47,7 @@ qits.http = (function() {
 
       // IE <= 9 doesn't allow to set Content-type
       if (xhr.setRequestHeader) {
-        xhr.setRequestHeader('Content-type', 'application/json');
+        //xhr.setRequestHeader('Content-type', 'application/json');
       }
 
       //do it, wrapped in timeout to fix ie9
@@ -69,9 +69,9 @@ qits.http = (function() {
   return fn;
 })();
 
-window.addEventListener('load', function() {
-  var collection = document.querySelectorAll('.nav');
-  //for (var i = 0; i < collection.length; i++) {
-    collection[0].addEventListener('click', qits.http.onClick);
-  //}
-});
+//window.addEventListener('load', function() {
+//  var collection = document.querySelectorAll('.nav');
+//  //for (var i = 0; i < collection.length; i++) {
+//    collection[0].addEventListener('click', qits.http.onClick);
+//  //}
+//});
