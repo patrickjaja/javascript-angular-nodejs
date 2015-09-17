@@ -1,21 +1,24 @@
 'use strict';
-var http = require('http');
+var fs = require('fs');
+var System = require('./class.system');
+var Logger = require('./class.logger.js');
+var Exceptions = require('./class.exceptions');
 
-class Webserver {
-  constructor(port) {
-    this.port = port;
+class Filesystems extends System {
+  constructor(filename) {
+    super();
+    this.filename=filename;
   }
-  start() {
-    this.server = http.createServer(this.handleRequest);
-    this.bindListener();
+  readFile() {
+    fs.readFile(this.filename, this.onReadFile);
   }
-  bindListener() {
-    this.server.listen(this.port, ()=>{
-      console.log(`Server listening on: http://localhost:${this.port}`);
-    });
-  }
-  handleRequest(request, response) {
-    response.end(`It Works!! Path Hit: ${request.url} `);
+  onReadFile(err, data) {
+    if (err) {
+      Exceptions.error(err);
+    } else {
+      Logger.log(data);
+      Logger.log(data.toString());
+    }
   }
 };
-module.exports = Webserver;
+module.exports = Filesystems;
