@@ -1,6 +1,6 @@
 'use strict';
-var webserver = require('./class.webserver');
-var express = require('express');
+var ExpressWebserver = require('./class.expressWebserver');
 
-var app = express();
-app.set();
+var eServer = new ExpressWebserver('8888');
+eServer.start();
+
