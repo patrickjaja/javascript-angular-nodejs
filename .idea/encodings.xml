@@ -2,11 +2,29 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/app/sources/.jscsrc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/css/base.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/css/layout.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/index.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/js/basics.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/js/constructors.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/js/main-for-worker.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/js/module.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/sources/seite1.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/js/my-app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/js/task.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/class.exceptions.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/class.filesystem.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/class.logger.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/class.system.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/class.webserver.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/index.express.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/index.filesystem.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/index.webserver.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/kreis.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejs/tmp/text.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/seite2.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/templates/about.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/templates/about2.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/templates/articles.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/templates/price.html" charset="UTF-8" />
   </component>
 </project>

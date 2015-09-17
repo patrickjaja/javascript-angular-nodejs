@@ -1,6 +1,6 @@
 #Install
- -- APP (Angular)
+## APP (Angular)
  - bower install
- -- NODE (4.0)
+## NODE (4.0)
  - cd app/sources/nodejs
  - npm install
