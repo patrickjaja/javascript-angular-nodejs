@@ -44,4 +44,5 @@ Temporary Items
 .idea
 bower_components
 app/sources/nodejs/node_modules
+app/sources/nodejschat/node_modules
 .idea/*

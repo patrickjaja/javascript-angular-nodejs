@@ -28,6 +28,8 @@
     <file url="file://$PROJECT_DIR$/app/sources/nodejs/tmp/text.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/nodejs/views/chat.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/nodejs/views/index.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejschat/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/sources/nodejschat/package.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/seite2.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/templates/about.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/sources/templates/about2.html" charset="UTF-8" />
